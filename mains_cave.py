@@ -142,9 +142,9 @@ def train(args):
 
     print('===> Loading datasets')
 
-    train_mslabel_set = loadingData(image_dir=args.train_dir_mslabel, augment=False, total_num=args.data_train_num)
-    train_msunlabel_set = loadingData(image_dir=args.train_dir_msunlabel, augment=False, total_num=args.theta_unlabel * args.data_train_num)
-    train_rgb_set = loadingData(image_dir=args.train_dir_rgb, augment=False, total_num=args.theta_rgb * args.data_train_num)
+    train_mslabel_set = loadingData(image_dir=args.train_dir_mslabel, augment=True, total_num=args.data_train_num)
+    train_msunlabel_set = loadingData(image_dir=args.train_dir_msunlabel, augment=True, total_num=args.theta_unlabel * args.data_train_num)
+    train_rgb_set = loadingData(image_dir=args.train_dir_rgb, augment=True, total_num=args.theta_rgb * args.data_train_num)
     eval_mslabel_set = loadingData(image_dir=args.eval_dir_ms, augment=False, total_num=args.data_eval_num)
 
     eval_ms_loader = DataLoader(eval_mslabel_set, batch_size=args.batch_size, num_workers=8, shuffle=False)
