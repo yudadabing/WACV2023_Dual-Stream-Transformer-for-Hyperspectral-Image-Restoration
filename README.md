@@ -3,7 +3,7 @@ Dual-Stream Transformer for Hyperspectral Image Restoration
 
 
 # Checkpoints
-CAVE:https://drive.google.com/file/d/1YhQI7fi5otiD8ZpFwtcUfpQg1L0acwOg/view?usp=share_link
+CAVE(x4): https://drive.google.com/file/d/1YhQI7fi5otiD8ZpFwtcUfpQg1L0acwOg/view?usp=share_link
 
 
 
